@@ -15,12 +15,12 @@ const uiConfig: AlchemyAccountsUIConfig = {
         { type: "passkey" },
         { type: "social", authProviderId: "google", mode: "popup" },
       ],
-      [
-        {
-          type: "external_wallets",
-          walletConnect: { projectId: "your-project-id" },
-        },
-      ],
+      // [
+      //   {
+      //     type: "external_wallets",
+      //     walletConnect: { projectId: "your-project-id" },
+      //   },
+      // ],
     ],
     addPasskeyOnSignup: false,
   },
