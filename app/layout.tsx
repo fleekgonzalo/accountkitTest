@@ -14,18 +14,20 @@ export const metadata: Metadata = {
   description: "Account Kit Quickstart NextJS Template",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   // Persist state across pages
   // https://accountkit.alchemy.com/react/ssr#persisting-the-account-state
+
+  const headersList = await headers();
+
   const initialState = cookieToInitialState(
     config,
-    headers().get("cookie") ?? undefined
+    headersList.get("cookie") ?? undefined
   );
-
   return (
     <html lang="en">
       <body className={inter.className}>
