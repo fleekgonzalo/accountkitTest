@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { headers } from "next/headers";
 import "./globals.css";
 import { Providers } from "./providers";
+export const runtime = "edge";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   title: "Account Kit Quickstart",
   description: "Account Kit Quickstart NextJS Template",
 };
-export const runtime = "edge";
+
 export default function RootLayout({
   children,
 }: Readonly<{
