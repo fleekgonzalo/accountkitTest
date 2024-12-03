@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Account Kit Quickstart",
   description: "Account Kit Quickstart NextJS Template",
 };
-
+export const runtime = "edge";
 export default function RootLayout({
   children,
 }: Readonly<{
