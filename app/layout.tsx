@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import { headers } from "next/headers";
 import "./globals.css";
 import { Providers } from "./providers";
-export const runtime = "edge";
+export const runtime = 'edge';
 
 const inter = Inter({ subsets: ["latin"] });
 
