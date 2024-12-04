@@ -5,7 +5,7 @@ import {
   useSignerStatus,
   useUser,
 } from "@account-kit/react";
-export const runtime = "edge";
+export const runtime = 'edge';
 export default function Home() {
   const user = useUser();
   const { openAuthModal } = useAuthModal();
